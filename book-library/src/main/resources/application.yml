@@ -13,3 +13,6 @@ server:
   servlet:
     context-path: /api/v1/
 
+jwt:
+  secret-key=2EEB4B421A4CE3A8D5C18ECEC4CBE:
+
