@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/book_social_network
-    username: username
-    password: password
+    url: jdbc:postgresql://localhost:5433/book_social_network
+    username: postgres
+    password: 12345
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -11,11 +11,11 @@ spring:
     properties:
       format_sql: true
     database: postgresql
-    database-platform: org.hibernate.dialect.PostgreSLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
   mail:
     host: localhost
-    ports:
+    port:
       1025
     username: alv
     password: alv
@@ -41,3 +41,5 @@ application:
   mailing:
     frontend:
       activation_url: http://localhost:4200/activate-account
+server:
+  port: 8080
